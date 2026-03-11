@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CV - Ruben BULLEN</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.cv-container {
+    width: 100%;
+    max-width: 1100px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: fadeIn 1s ease-in-out;
+}
+
+.sidebar {
+    background: rgba(255,255,255,0.15);
+    padding: 40px 30px;
+    color: white;
+}
+
+.sidebar h1 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.sidebar .title {
+    font-weight: 300;
+    margin-bottom: 30px;
+    opacity: 0.8;
+}
+
+.sidebar h2 {
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.sidebar p, .sidebar li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.main {
+    background: white;
+    padding: 50px;
+}
+
+.section {
+    margin-bottom: 40px;
+    animation: slideUp 0.8s ease forwards;
+}
+
+.section h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.section h2::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: #667eea;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
+
+.job {
+    margin-bottom: 25px;
+}
+
+.job h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.job span {
+    font-size: 13px;
+    color: #777;
+}
+
+.job ul {
+    margin-top: 8px;
+    padding-left: 18px;
+}
+
+.job ul li {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    margin-bottom: 10px;
+}
+
+.skill-bar span {
+    font-size: 13px;
+}
+
+.bar {
+    height: 6px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 10px;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.bar-fill {
+    height: 100%;
+    background: white;
+    width: 80%;
+    border-radius: 10px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media(max-width: 900px){
+    .cv-container {
+        grid-template-columns: 1fr;
+    }
+    .main {
+        padding: 30px;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<div class="cv-container">
+
+    <div class="sidebar">
+        <h1>Ruben BULLEN</h1>
+        <div class="title">Etudiant en informatique</div>
+
+        <h2>Contact</h2>
+        <p>
+            bullenartinoh@email.com<br>
+            0387718490<br>
+        </p>
+
+        <h2>Compétences</h2>
+
+        <div class="skill-bar">
+            <span>HTML / CSS</span>
+            <div class="bar"><div class="bar-fill" style="width:95%"></div></div>
+        </div>
+
+        <div class="skill-bar">
+            <span>JavaScript</span>
+            <div class="bar"><div class="bar-fill" style="width:65%"></div></div>
+        </div>
+
+        <h2>Langues</h2>
+        <p>
+            Malagasy _ Courant<br>
+	    Français — Courant<br>
+            Anglais — Débutant
+        </p>
+    </div>
+
+    <div class="main">
+
+        <div class="section">
+            <h2>Profil</h2>
+            <p>
+                Développeur passionné de la technologie qui débute l'expérience dans le développement 
+                d'applications internet intranet (DA2I).
+            </p>
+        </div>
+
+        </div>
+    <div class="main">
+        <div class="section">
+            <h2>Formation</h2>
+            <p>Licence Informatique – Université de FIANARANTSOA à l'Ecole de Management et d'innovation Technologique</p>
+        </div>
+
+        
+    </div>
+
+</div>
+
+</body>
+</html>
